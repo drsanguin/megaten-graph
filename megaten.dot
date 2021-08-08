@@ -1,0 +1,114 @@
+/* https://en.wikipedia.org/wiki/List_of_Megami_Tensei_video_games */
+digraph Megaten {
+  
+  /* Time-line */
+  1987 -> 1990 -> 1992 -> 1993 -> 1994 -> 1995 -> 1996 -> 1997 -> 1999 -> 2000 -> 2002 -> 2003 -> 2006 -> 2007 -> 2008 -> 2009 -> 2010 -> 2011 -> 2012 -> 2013 -> 2014 -> 2015 -> 2016 -> 2018 -> 2019 -> 2021;
+
+  /* Digital Devil Story: Megami Tensei */
+  MT  [ label = "Digital Devil Story: Megami Tensei" ];
+  MT2 [ label = "Digital Devil Story: Megami Tensei II" ];
+  MT -> MT2;
+  
+  /* Shin Megami Tensei https://en.wikipedia.org/wiki/Megami_Tensei */
+  SMT        [ label = "Shin Megami Tensei" ];
+  SMT2       [ label = "Shin Megami Tensei II" ];
+  SMTIf      [ label = "Shin Megami Tensei If..." ];
+  SMTNine    [ label = "Shin Megami Tensei: Nine" ];
+  SMT3       [ label = "Shin Megami Tensei III: Nocturne" ];
+  SMTImagine [ label = "Shin Megami Tensei: Imagine" ];
+  SMTSJ      [ label = "Shin Megami Tensei: Strange Journey" ];
+  SMT4       [ label = "Shin Megami Tensei IV" ];
+  SMT4A      [ label = "Shin Megami Tensei IV: Apocalypse" ];
+  SMT5       [ label = "Shin Megami Tensei V" ];
+  SMT -> SMT2 -> SMTIf -> SMTNine -> SMT3 -> SMTImagine -> SMTSJ -> SMT4 -> SMT4A -> SMT5;
+
+  /* Devil Summoner */
+  DSum   [ label = "Shin Megami Tensei: Devil Summoner" ];
+  DSumSH [ label = "Devil Summoner: Soul Hackers" ];
+  DSumRK [ label = "Devil Summoner: Raidou Kuzunoha vs. the Soulless Army" ];
+  DSum2  [ label = "Devil Summoner 2: Raidou Kuzunoha vs. King Abaddon" ];
+  DSum -> DSumSH -> DSumRK -> DSum2;
+
+  /* Devil Survivor */
+  DSurv  [ label = "Shin Megami Tensei: Devil Survivor" ];
+  DSurv2 [ label = "Shin Megami Tensei: Devil Survivor 2" ];
+  DSurv -> DSurv2;
+  
+  /* Last Bible */
+  LB    [ label = "Megami Tensei Gaiden: Last Bible" ];
+  LB2   [ label = "Megami Tensei Gaiden: Last Bible II" ];
+  LB3   [ label = "Last Bible III" ];
+  LBAB  [ label = "Another Bible" ];
+  LBS   [ label = "Megami Tensei Gaiden: Last Bible Special" ];
+  LBNT  [ label = "Megami Tensei Gaiden: Last Bible New Testament" ];
+  LBNT2 [ label = "Megami Tensei Gaiden: Last Bible New Testament II" ];
+  LBNT3 [ label = "Megami Tensei Gaiden: Last Bible New Testament III" ];
+  LB -> LB2 -> LB3 -> LBAB -> LBS -> LBNT -> LBNT2 -> LBNT3;
+
+  /* Majin Tensei */
+  MajT    [ label = "Majin Tensei" ];
+  MajT2   [ label = "Majin Tensei II: Spiral Nemesis" ];
+  MajTR   [ label = "Ronde" ];
+  MajTBT  [ label = "Majin Tensei: Blind Thinker" ];
+  MajTBT2 [ label = "Majin Tensei: Blind Thinker II" ];
+  MajT -> MajT2 -> MajTR -> MajTBT -> MajTBT2;
+
+  /* Jack Bros. */
+  JB [ label = "Jack Bros." ];
+
+  /* Persona https://en.wikipedia.org/wiki/Persona_(series) */
+  P1      [ label = "Revelations: Persona" ];
+  P2      [ label = "Persona 2: Innocent Sin" ];
+  P2EP    [ label = "Persona 2: Eternal Punishment" ];
+  P3      [ label = "Persona 3"; ];
+  P3FES   [ label = "Persona 3 FES" ];
+  P4      [ label = "Persona 4" ];
+  P3P     [ label = "Persona 3 Portable" ];
+  P4Arena [ label = "Persona 4 Arena" ];
+  P4G     [ label = "Persona 4 Golden" ];
+  P4AU    [ label = "Persona 4 Arena Ultimax" ];
+  PQ      [ label = "Persona Q: Shadow of the Labyrinth" ];
+  P4D     [ label = "Persona 4: Dancing All Night" ];
+  P5      [ label = "Persona 5" ];
+  P3D     [ label = "Persona 3: Dancing in Moonlight" ];
+  P5D     [ label = "Persona 5: Dancing in Starlight" ];
+  PQ2     [ label = "Persona Q2: New Cinema Labyrinth" ];
+  P5R     [ label = "Persona 5 Royal" ];
+  P5S     [ label = "Persona 5 Strikers" ];
+  P1 -> P2 -> P2EP -> P3 -> P3FES -> P4 -> P3P -> P4Arena -> P4G -> P4AU -> PQ -> P4D -> P5 -> P3D -> P5D -> PQ2 -> P5R -> P5S;
+
+  /* Tokyo Mirage Sessions */
+  TMS [ label = "Tokyo Mirage Sessions ♯FE" ];
+
+  /* Liberation */
+  Lib [ label = "Shin Megami Tensei: Liberation Dx2" ];
+
+  /* Ranks */
+  { rank = same; 1987; MT; };
+  { rank = same; 1990; MT2; };
+  { rank = same; 1992; SMT; LB; };
+  { rank = same; 1993; LB2; };
+  { rank = same; 1994; SMT2; SMTIf; MajT; };
+  { rank = same; 1995; DSum; LB3; LBAB; LBS; MajT2; JB; };
+  { rank = same; 1996; P1; };
+  { rank = same; 1997; DSumSH; MajTR; };
+  { rank = same; 1999; P2; };
+  { rank = same; 2000; P2EP; };
+  { rank = same; 2002; SMTNine; };
+  { rank = same; 2003; SMT3; };
+  { rank = same; 2006; DSumRK; P3; };
+  { rank = same; 2007; SMTImagine; MajTBT; P3FES; };
+  { rank = same; 2008; DSum2; LBNT; MajTBT2; P4; };
+  { rank = same; 2009; SMTSJ; DSurv; LBNT2; P3P; };
+  { rank = same; 2010; LBNT3; };
+  { rank = same; 2011; DSurv2; };
+  { rank = same; 2012; P4Arena; P4G; };
+  { rank = same; 2013; SMT4; P4AU; };
+  { rank = same; 2014; PQ; };
+  { rank = same; 2015; P4D; TMS; };
+  { rank = same; 2016; SMT4A; P5; };
+  { rank = same; 2018; P3D; P5D; };
+  { rank = same; 2018; PQ2; Lib; };
+  { rank = same; 2019; P5R; };
+  { rank = same; 2021; P5S; SMT5; };
+}

@@ -1,7 +1,7 @@
 /* https://en.wikipedia.org/wiki/List_of_Megami_Tensei_video_games */
 digraph Megaten {
   graph [ label = "Megaten Series
-  1.0.0 (08/08/2021) by dr_sanguin
+  1.0.2 (08/08/2021) by dr_sanguin
   https://github.com/drsanguin/megaten-graph"
   ];
 

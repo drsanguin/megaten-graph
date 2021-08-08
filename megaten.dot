@@ -6,7 +6,7 @@ digraph Megaten {
   ];
 
   /* Time-line */
-  1987 -> 1990 -> 1992 -> 1993 -> 1994 -> 1995 -> 1996 -> 1997 -> 1999 -> 2000 -> 2002 -> 2003 -> 2006 -> 2007 -> 2008 -> 2009 -> 2010 -> 2011 -> 2012 -> 2013 -> 2014 -> 2015 -> 2016 -> 2018 -> 2019 -> 2021;
+  1987 -> 1990 -> 1992 -> 1993 -> 1994 -> 1995 -> 1996 -> 1997 -> 1999 -> 2000 -> 2001 -> 2002 -> 2003 -> 2004 -> 2006 -> 2007 -> 2008 -> 2009 -> 2010 -> 2011 -> 2012 -> 2013 -> 2014 -> 2015 -> 2016 -> 2018 -> 2019 -> 2021;
 
   /* Digital Devil Story: Megami Tensei */
   MT  [ label = "Digital Devil Story: Megami Tensei" ];
@@ -81,6 +81,29 @@ digraph Megaten {
   P5S     [ label = "Persona 5 Strikers" ];
   P1 -> P2 -> P2EP -> P3 -> P3FES -> P4 -> P3P -> P4Arena -> P4G -> P4AU -> PQ -> P4D -> P5 -> P3D -> P5D -> PQ2 -> P5R -> P5S;
 
+  /* Shin Megami Tensei: Devil Children */
+  DCBB [ label = "Shin Megami Tensei: Devil Children – Black Book" ];
+  DCRB [ label = "Shin Megami Tensei: Devil Children – Red Book" ];
+  DCWB [ label = "Shin Megami Tensei: Devil Children – White Book" ];
+  DCLB [ label = "Shin Megami Tensei: Devil Children – Light Book" ];
+  DCDB [ label = "Shin Megami Tensei: Devil Children – Dark Book" ];
+  DCPC [ label = "Shin Megami Tensei: Devil Children – Puzzle de Call!" ];
+  DCBF [ label = "Shin Megami Tensei: Devil Children – Book of Fire" ];
+  DCBI [ label = "Shin Megami Tensei: Devil Children – Book of Ice" ];
+  DCMR [ label = "Shin Megami Tensei: Devil Children – Messiah Riser" ];
+  DC   [ label = "Shin Megami Tensei: Devil Children" ];
+  DCBB -> DCWB;
+  DCRB -> DCWB;
+  DCWB -> DCLB;
+  DCWB -> DCDB;
+  DCLB -> DCPC;
+  DCDB -> DCPC;
+  DCPC -> DCBF;
+  DCPC -> DCBI;
+  DCBF -> DCMR;
+  DCBI -> DCMR;
+  DCMR -> DC;
+
   /* Tokyo Mirage Sessions */
   TMS [ label = "Tokyo Mirage Sessions ♯FE" ];
 
@@ -97,15 +120,17 @@ digraph Megaten {
   { rank = same; 1996; P1; };
   { rank = same; 1997; DSumSH; MajTR; };
   { rank = same; 1999; P2; };
-  { rank = same; 2000; P2EP; };
-  { rank = same; 2002; SMTNine; };
-  { rank = same; 2003; SMT3; };
+  { rank = same; 2000; P2EP; DCBB; DCRB; };
+  { rank = same; 2001; DCWB; };
+  { rank = same; 2002; SMTNine; DCLB; DCDB; };
+  { rank = same; 2003; SMT3; DCPC; DCBF; DCBI; };
+  { rank = same; 2004; DCMR; };
   { rank = same; 2006; DSumRK; P3; };
   { rank = same; 2007; SMTImagine; MajTBT; P3FES; };
   { rank = same; 2008; DSum2; LBNT; MajTBT2; P4; };
   { rank = same; 2009; SMTSJ; DSurv; LBNT2; P3P; };
   { rank = same; 2010; LBNT3; };
-  { rank = same; 2011; DSurv2; };
+  { rank = same; 2011; DSurv2; DC; };
   { rank = same; 2012; P4Arena; P4G; };
   { rank = same; 2013; SMT4; P4AU; };
   { rank = same; 2014; PQ; };

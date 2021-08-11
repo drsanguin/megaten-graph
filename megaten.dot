@@ -6,8 +6,132 @@ digraph Megaten {
   ];
 
   /* Time-line */
-  1987 -> 1990 -> 1992 -> 1993 -> 1994 -> 1995 -> 1996 -> 1997 -> 1999 -> 2000 -> 2001 -> 2002 -> 2003 -> 2004 -> 2005 -> 2006 -> 2007 -> 2008 -> 2009 -> 2010 -> 2011 -> 2012 -> 2013 -> 2014 -> 2015 -> 2016 -> 2018 -> 2019 -> 2021;
+  {
+    node [style=filled color=grey];
+    1987 -> 1990 -> 1992 -> 1993 -> 1994 -> 1995 -> 1996 -> 1997 -> 1999 -> 2000 -> 2001 -> 2002 -> 2003 -> 2004 -> 2005 -> 2006 -> 2007 -> 2008 -> 2009 -> 2010 -> 2011 -> 2012 -> 2013 -> 2014 -> 2015 -> 2016 -> 2018 -> 2019 -> 2021;
+  }  
 
+  /* Colours */
+  /* NES */
+  {
+    node [style=filled colorscheme=accent8 color=1];
+    MT; MT2;
+  }
+
+  /* SNES */
+  {
+    node [style=filled colorscheme=accent8 color=2];
+    SMT; SMT2; SMTIf; LB3; MajT; MajT2;
+  }
+
+  /* Xbox */
+  {
+    node [style=filled colorscheme=accent8 color=3];
+    SMTNine;
+  }
+
+  /* PS2 */
+  {
+    node [style=filled colorscheme=brbg11 color=4];
+    SMT3; DSumRK; DSum2; P3; P3FES; P4; DDS; DDS2;
+  }
+
+  /* PC */
+  {
+    node [style=filled colorscheme=accent8 color=5];
+    SMTImagine;
+  }
+
+  /* DS */
+  {
+    node [style=filled colorscheme=accent8 color=6];
+    SMTSJ; DSurv; DSurv2;
+  }
+
+  /* 3DS */
+  {
+    node [style=filled colorscheme=accent8 color=7];
+    SMT4; SMT4A; PQ; PQ2;
+  }
+
+  /* Switch */
+  {
+    node [style=filled colorscheme=accent8 color=8];
+    SMT5;
+  }
+
+  /* Saturn */
+  {
+    node [style=filled colorscheme=paired12 color=1];
+    DSum; DSumSH; MajTR;
+  }
+
+  /* Game Boy */
+  {
+    node [style=filled colorscheme=paired12 color=2];
+    LB; LB2; LBAB; DCBB; DCRB; DCWB;
+  }
+
+  /* Game Gear */
+  {
+    node [style=filled colorscheme=paired12 color=3];
+    LBS;
+  }
+
+  /* Mobile */
+  {
+    node [style=filled colorscheme=paired12 color=4];
+    LBNT; LBNT2; LBNT3; MajTBT; MajTBT2; DC; Lib;
+  }
+
+  /* Virtual Boy */
+  {
+    node [style=filled colorscheme=paired12 color=5];
+    JB;
+  }
+
+  /* PS1 */
+  {
+    node [style=filled colorscheme=paired12 color=6];
+    P1; P2; P2EP;
+  }
+
+  /* PSP */
+  {
+    node [style=filled colorscheme=paired12 color=7];
+    P3P; P4G;
+  }
+
+  /* PS360 */
+  {
+    node [style=filled colorscheme=paired12 color=8];
+    P4Arena; P4AU;
+  }
+
+  /* PS Vita */
+  {
+    node [style=filled colorscheme=paired12 color=9];
+    P4D;
+  }
+
+  /* PS4 */
+  {
+    node [style=filled colorscheme=paired12 color=10];
+    P5; P3D; P5D; P5R; P5S;
+  }
+
+  /* Game Boy Advance */
+  {
+    node [style=filled colorscheme=paired12 color=11];
+    DCLB; DCDB; DCPC; DCBF; DCBI; DCMR;
+  }
+
+  /* Wii U */
+  {
+    node [style=filled colorscheme=paired12 color=12];
+    TMS;
+  }
+  
   /* Digital Devil Story: Megami Tensei */
   MT  [ label = "Digital Devil Story: Megami Tensei" ];
   MT2 [ label = "Digital Devil Story: Megami Tensei II" ];
